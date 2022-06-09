@@ -23,11 +23,6 @@
             <message>Last Name is required.</message>
         </field-validator>
     </field>
-<field name="personBean.age">
-        <field-validator type="requiredstring">
-            <message>Age is required.</message>
-        </field-validator>
-    </field>
     <field name="personBean.email">
         <field-validator type="requiredstring">
             <message>Email is required.</message>

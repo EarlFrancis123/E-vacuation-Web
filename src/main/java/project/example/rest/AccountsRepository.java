@@ -11,7 +11,7 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 
-import project.example.model.Account;
+
 import project.example.model.Person;
 
 
@@ -27,13 +27,13 @@ public class AccountsRepository {
     public Map<String, Person> findAllAccounts() throws SQLException{
         connectToDb();
         if (connection != null) {
-            String sql = "SELECT * FROM users";
+            String sql = "SELECT * FROM persons";
             preparedStatement = connection.prepareStatement(sql);
             ResultSet rs= preparedStatement.executeQuery();
 
             while(rs.next()){  
                 Person person=new Person();
-                person.setUserId(rs.getInt(1));
+                person.setPassword(rs.getString(5));
                 person.setLastName(rs.getString(7));   
                 person.setFirstName(rs.getString(6)); 
                 person.setEmail(rs.getString(9));
@@ -50,7 +50,7 @@ public class AccountsRepository {
         connection = connectToDb();
         if (connection != null) {
             Statement statement = connection.createStatement();
-            String sql = "INSERT INTO users(password,first_name, last_name, age, email) VALUES('"+account.getPassword()+"','"+account.getFirstName()+"','"+account.getLastName()+"','"+account.getAge()+"','"+account.getEmail()+"')";
+            String sql = "INSERT INTO persons(password,first_name, last_name, age, email) VALUES('"+account.getPassword()+"','"+account.getFirstName()+"','"+account.getLastName()+"','"+account.getAge()+"','"+account.getEmail()+"')";
             statement.executeUpdate(sql);
             statement.close();
             connection.close();
