@@ -1,0 +1,85 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@EarlFrancis123 
+EarlFrancis123
+/
+tomcatproject-tajanlangit
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+tomcatproject-tajanlangit/src/main/resources/struts.xml
+@EarlFrancis123
+EarlFrancis123 tomcat project
+Latest commit 646dccb 3 hours ago
+ History
+ 1 contributor
+59 lines (50 sloc)  2.32 KB
+   
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.devMode" value="true"/>
+   <constant name="struts.ui.theme" value="css_xhtml" />
+    <include file="example.xml"/>
+
+    <package name="default" namespace="/" extends="struts-default">
+
+        <default-action-ref name="index"/>
+
+        <action name="index">
+            <result>/index.jsp</result>
+        </action>
+
+     
+          <action name="OurServices" class="project.example.OurServices">
+            <result>/WEB-INF/Pages/OurServices.jsp</result>
+        </action>
+         <action name="ContactUs" class="project.example.ContactUs">
+            <result>/WEB-INF/Pages/ContactUs.jsp</result>
+        </action>
+
+        <action name="About" class="project.example.About">
+            <result>/WEB-INF/Pages/About.jsp</result>
+        </action>
+          <action name="Register" class="project.example.Register">
+            <result>/WEB-INF/Pages/Register.jsp</result>
+        </action>
+        <action name="list" class="project.example.List">
+            <result>/WEB-INF/Pages/lists.jsp</result>
+        </action>
+         <action name="addtodatabase" class="project.example.AddtoDatabase" method="execute">
+              <result name="success">/WEB-INF/Pages/LoginA.jsp</result>
+            <result name="error">/WEB-INF/Pages/error.jsp</result>
+  </action>
+        <action name="LoginA" class="project.example.LoginA">
+            <result>/WEB-INF/Pages/LoginA.jsp</result>
+        </action>
+
+         <action name="LoginB" class="project.example.LoginB" method="execute">
+              <interceptor-ref name="defaultStack"/>
+            <result name="success">/WEB-INF/Pages/Profile.jsp</result>
+            <result name="input">/WEB-INF/Pages/LoginA.jsp</result>
+            <result name="error">/WEB-INF/Pages/error.jsp</result>
+        </action>
+        <action name="displayUser" class="project.example.List" method="displayUser">
+            <result name="success">/WEB-INF/Pages/welcome.jsp</result>
+        </action>
+    </package>
+
+    <!-- Add addition packages and configuration here. -->
+</struts>
