@@ -89,10 +89,17 @@ li a {
           <s:a href="%{aboutPage}">About</s:a>
         </li>
         <li style="align-items: center;">
+          <s:url var="News" action="News" />
+          <s:a href="%{News}">News</s:a>
+        </li>
+        <li style="align-items: center;">
           <s:url var="OurServices" action="OurServices" />
           <s:a href="%{OurServices}">Our Service</s:a>
         </li>
-    
+        <li style="align-items: center;">
+          <s:url var="Weather" action="Weather" />
+          <s:a href="%{Weather}">Weather</s:a>
+        </li>
         <li style="align-items: center;">
           <s:url var="ContactUs" action="ContactUs" />
           <s:a href="%{ContactUs}">Contact Us</s:a>

@@ -8,11 +8,10 @@ import org.apache.struts2.rest.HttpHeaders;
 
 import com.opensymphony.xwork2.ModelDriven;
 
-import project.example.model.Account;
 import project.example.model.Person;
 
 public class AccountsController implements ModelDriven<Object> {
-    private static final long serialVersionUID = 1L; 
+   
     private Object model;
     String id;
     Person account = new Person();
