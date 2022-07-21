@@ -13,7 +13,6 @@
       
       header{
           align-content: center;
-
       }
       body {
   background-image: url('https://images8.alphacoders.com/425/425698.jpg');
@@ -25,7 +24,6 @@
         float: left;
         width: 33.33%;
       }
-
       /* Clear floats after the columns */
       .row:after {
         content: "";
@@ -53,7 +51,7 @@
     </style>
   </head>
   <body>
-    <s:include value="/WEB-INF/Pages/Menu.jsp"/>
+    <s:include value="/WEB-INF/Pages/Menu2.jsp"/>
 
     <main>
   

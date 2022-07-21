@@ -1,24 +1,35 @@
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\model\Person.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\List.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\model\Articles.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\rest\AccountsRepository.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\LoginA.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\ExampleSupport.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\News.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\Register.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\Profile.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\rest\AccountsController.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\HelloWorld.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\About.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\Account.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\model\Account.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\model\WeatherRequest.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\AddtoDatabase.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\model\WeatherCurrent.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\model\WeatherResponse.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\model\NewsResponse.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\Weather.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\model\MessageStore.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\ContactUs.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\LoginB.java
-C:\Users\NS_Laptop_2205\Documents\tomcatproject-tajanlangit-master\src\main\java\project\example\OurServices.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\Evacuees.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\Donation.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\Account.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\SearchDonation.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\model\Evacuee.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\model\WeatherCurrent.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\LoginB.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\ListDonation.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\ListEvacuee.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\SearchEvacuation.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\AddEvacuation.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\ExampleSupport.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\Logout.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\AddDonation.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\Register.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\model\WeatherResponse.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\model\Account.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\model\WeatherRequest.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\rest\AccountsRepository.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\HelloWorld.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\LoginA.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\model\WeatherLocation.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\rest\AccountsController.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\LEvacuee.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\model\Person.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\Profile.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\ListEvacuation.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\model\Donation.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\List.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\AddtoDatabase.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\SearchEvacuee.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\model\Evacuation.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\Evacuation.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\AddEvacuee.java
+E:\NexSeed Projects\Struts2project\src\main\java\project\example\action\Weather.java

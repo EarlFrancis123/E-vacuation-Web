@@ -1,109 +1,72 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
-  <head>
-  <style>
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-    }
-    
-    li {
-      float: left;
-    }
-    
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
-    li a:hover {
-      background-color: #111;
-    }
-    body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;width: 50%;margin-left : 25%}
-
-input[type=text], input[type=password] {
-width: 100%;
-padding: 12px 20px;
-margin: 8px 0;
-display: inline-block;
-border: 1px solid #ccc;
-box-sizing: border-box;
+    <head>
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+s:textfield{
+  align-items: center;
 }
 
-button {
-background-color: #04AA6D;
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-cursor: pointer;
-width: 100%;
-}
-
-button:hover {
-opacity: 0.8;
-}
-
-.cancelbtn {
-width: auto;
-padding: 10px 18px;
-background-color: #f44336;
-}
-
-.imgcontainer {
-text-align: center;
-margin: 24px 0 12px 0;
-}
-
-img.avatar {
-width: 40%;
-border-radius: 50%;
-}
-
-.container {
-padding: 16px;
-}
-
-span.psw {
-float: right;
-padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width:50px) {
-span.psw {
- display: none;
- float: none;
-}
-.cancelbtn {
- width: 100%;
-}
-}
-h3 {text-align: center;}
-        </style>
+</style>
+ 
 </head>
   <body>
-    <s:include value="Menu.jsp" />
-
-  <main>
-     
-      <s:form action="LoginB" class="form">
-        <h3>Sign in</h3>
-        <s:textfield name="personBean.email"  label ="Email"/>  
-        <s:textfield name="personBean.password"  label="Password"  />
-        <s:submit value="Submit" class="btn-submit" />
-    </s:form>
-   <!--<s:if test='%{personBean.email != null || personBean.password != null}' >
-      <h3>Invalid Username or Password! Please Try Again</h3>
-    </s:if>-->
-  </main>
+    <s:include value="Menu2.jsp" />
+    <section class="">
+      <!-- Jumbotron -->
+      <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+        <div class="container">
+          <div class="row gx-lg-5 align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <h1 class="my-5 display-3 fw-bold ls-tight">
+                E-vacuation <br />
+                <span class="text-primary">A guide to safety</span>
+              </h1>
+              <p style="color: hsl(217, 10%, 50.8%)">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, itaque accusantium odio, soluta, corrupti aliquam
+                quibusdam tempora at cupiditate quis eum maiores libero
+                veritatis? Dicta facilis sint aliquid ipsum atque?
+              </p>
+            </div>
+    
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div class="card">
+                <div class="card-body py-5 px-md-5">
+                  <s:form action="LoginB" class="form" style="margin-left: 40px;">
+                  
+                      <h1>SING IN</h1>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <s:textfield name="personBean.email"  label ="Email" class="form-control" required="true" />  
+                    </div>
+    
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                      <s:textfield name="personBean.password"  label="Password"  class="form-control"  required="true"/>
+                    </div>
+    
+                  
+    
+                    <!-- Submit button -->
+                
+                    <s:submit value="Sign in" class="btn btn-primary btn-block mb-4" />
+                     
+               
+                  
+                    </s:form>
+                    <p>Not Yet Registered? <a href="http://localhost:8080/basic-struts/Register.xhtml">Click Here</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Jumbotron -->
+    </section>
+  
   </body>
 </html>

@@ -17,66 +17,127 @@
 
     <package name="default" namespace="/" extends="struts-default">
 
-        <default-action-ref name="index"/>
 
-        <action name="index">
-            <result>
-                <param name="actionName">HelloWorld</param>
-                <param name="namespace">/example</param>
-            </result>
+        <action name="index" >
+            <result>/index.jsp</result>
         </action>
 
-     
-          <action name="OurServices" class="project.example.OurServices">
-            <result>/WEB-INF/Pages/OurServices.jsp</result>
-        </action>
-         <action name="ContactUs" class="project.example.ContactUs">
-            <result>/WEB-INF/Pages/ContactUs.jsp</result>
-        </action>
-    <action name="News" class="project.example.News">
-            <result name="success">/WEB-INF/Pages/News.jsp</result>
-        </action>
-        
-        <action name="About" class="project.example.About">
-            <result>/WEB-INF/Pages/About.jsp</result>
-        </action>
-          <action name="Register" class="project.example.Register">
+       <action name="AddDonation" class="project.example.action.Donation">
+            <result>/WEB-INF/Pages/AddDonation.jsp</result>
+         </action>
+
+        <action name="AddEvacuation" class="project.example.action.Evacuation">
+            <result>/WEB-INF/Pages/AddEvacuation.jsp</result>
+         </action>
+
+         <action name="Evacuee" class="project.example.action.Evacuees">
+            <result>/WEB-INF/Pages/AddEvacuee.jsp</result>
+         </action>
+
+         <action name="ListEvacuation" class="project.example.action.ListEvacuation">
+            <result>/WEB-INF/Pages/ListEvacuation.jsp</result>
+         </action>
+          <action name="ListEvacuation2" class="project.example.action.ListEvacuation">
+            <result>/WEB-INF/Pages/ListEvacuation2.jsp</result>
+         </action>
+           <action name="SearchEvacuation" class="project.example.action.SearchEvacuation">
+            <result>/WEB-INF/Pages/ListEvacuation.jsp</result>
+         </action>
+         <action name="SearchEvacuee" class="project.example.action.SearchEvacuee">
+            <result>/WEB-INF/Pages/ListEvacuee.jsp</result>
+         </action>
+           <action name="SearchDonations" class="project.example.action.SearchDonation">
+            <result>/WEB-INF/Pages/ListDonation.jsp</result>
+         </action>
+         
+         
+         
+         <action name="ListDonation" class="project.example.action.ListDonation">
+            <result>/WEB-INF/Pages/ListDonation.jsp</result>
+         </action>
+      
+
+         <action name="ListEvacuee" class="project.example.action.ListEvacuee">
+            <result>/WEB-INF/Pages/ListEvacuee.jsp</result>
+         </action>
+
+         <action name="ListEvacuee2" class="project.example.action.ListEvacuee">
+            <result>/WEB-INF/Pages/ListEvacuee2.jsp</result>
+         </action>
+         <action name="Register" class="project.example.action.Register">
             <result>/WEB-INF/Pages/Register.jsp</result>
-        </action>
-         <action name="Weather" class="project.example.Weather">
+         </action>
+
+         <action name="Weather" class="project.example.action.Weather">
             <result name="success">/WEB-INF/Pages/Weather.jsp</result>
-        </action>
-        <action name="list" class="project.example.List">
+         </action>
+            <action name="Weather2" class="project.example.action.Weather">
+            <result name="success">/WEB-INF/Pages/Weather2.jsp</result>
+         </action>
+
+
+         <action name="list" class="project.example.action.List">
             <result>/WEB-INF/Pages/lists.jsp</result>
-        </action>
-         <action name="addtodatabase" class="project.example.AddtoDatabase" method="execute">
-          <interceptor-ref name="defaultStack"/>
-              <result name="success">/WEB-INF/Pages/LoginA.jsp</result>
+         </action>
+
+         <action name="addtodatabase" class="project.example.action.AddtoDatabase" method="execute">
+              <result name="success">/WEB-INF/Pages/Profile.jsp</result>
               <result name="input">/WEB-INF/Pages/Register.jsp</result>
             <result name="error">/WEB-INF/Pages/error.jsp</result>
-  </action>
-        <action name="LoginA" class="project.example.LoginA">
-            <result>/WEB-INF/Pages/LoginA.jsp</result>
-        </action>
+         </action>
+          <action name="adddonation" class="project.example.action.AddDonation" method="execute">
+                  <result name="success">/WEB-INF/Pages/ListDonation.jsp</result>
+              <result name="input">/WEB-INF/Pages/Register.jsp</result>
+            <result name="error">/WEB-INF/Pages/error.jsp</result>
+         </action>
 
-         <action name="LoginB" class="project.example.LoginB">
+
+         <action name="addevacuee" class="project.example.action.AddEvacuee" method="execute">
+              <result name="success">/WEB-INF/Pages/ListEvacuee.jsp</result>
+              <result name="input">/WEB-INF/Pages/Register.jsp</result>
+            <result name="error">/WEB-INF/Pages/error.jsp</result>
+         </action>
+           <action name="addevacuation" class="project.example.action.AddEvacuation" method="execute">
+              <result name="success">/WEB-INF/Pages/ListEvacuation.jsp</result>
+              <result name="input">/WEB-INF/Pages/Register.jsp</result>
+            <result name="error">/WEB-INF/Pages/error.jsp</result>
+         </action>
+
+         <action name="LoginA" class="project.example.action.LoginA">
+            <result>/WEB-INF/Pages/LoginA.jsp</result>
+         </action>
+
+         <action name="LoginB" class="project.example.action.LoginB">
               <interceptor-ref name="defaultStack"/>
             <result name="success">/WEB-INF/Pages/Profile.jsp</result>
             <result name="input">/WEB-INF/Pages/LoginA.jsp</result>
             <result name="error">/WEB-INF/Pages/error.jsp</result>
-        </action>
-        <action name="displayUser" class="project.example.List" method="displayUser">
+         </action>
+         
+         <action name="Logout" class="project.example.action.Logout">
+            <result name="success">/WEB-INF/Pages/Profile.jsp</result>
+         </action>
+
+         <action name="Profile" class="project.example.action.Profile">
+            <result name="success">/WEB-INF/Pages/About.jsp</result>
+            <result name="fail">/WEB-INF/Pages/LoginA.jsp</result>
+         </action>
+
+         <action name="displayUser" class="project.example.action.List" method="displayUser">
             <result name="success">/WEB-INF/Pages/welcome.jsp</result>
-        </action>
+         </action>
+           <action name="displayEvacuee" class="project.example.action.ListEvacuee" method="displayEvacuee">
+            <result name="success">/WEB-INF/Pages/welcome.jsp</result>
+         </action>
           
 
     </package>
       <package name="rest" namespace="/rest" extends="rest-default">
-        <action name="Accounts/*" class="project.example.rest.AccountsController">
+         <action name="Accounts/*" class="project.example.rest.AccountsController">
             <result name="id"> ${1} </result>
-        </action>
+         </action>
 
-    </package>
+      </package>
 
     <!-- Add addition packages and configuration here. -->
 </struts>

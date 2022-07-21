@@ -4,6 +4,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <style> 
       body {
         font-family: 'Roboto', sans-serif;
@@ -80,40 +85,32 @@ li a {
 </style>
 <nav>
     <ul>
-        <li style="align-items: center;">
-          <s:url var="homePage" value="/" />
-          <s:a href="%{homePage}">Home</s:a>
-        </li>
-        <li style="align-items: center;">
-          <s:url var="aboutPage" action="About" />
-          <s:a href="%{aboutPage}">About</s:a>
-        </li>
-        <li style="align-items: center;">
-          <s:url var="News" action="News" />
-          <s:a href="%{News}">News</s:a>
-        </li>
-        <li style="align-items: center;">
-          <s:url var="OurServices" action="OurServices" />
-          <s:a href="%{OurServices}">Our Service</s:a>
-        </li>
-        <li style="align-items: center;">
-          <s:url var="Weather" action="Weather" />
-          <s:a href="%{Weather}">Weather</s:a>
-        </li>
-        <li style="align-items: center;">
-          <s:url var="ContactUs" action="ContactUs" />
-          <s:a href="%{ContactUs}">Contact Us</s:a>
-        </li>
+     
+      <li style="align-items: center;">
+        <s:url var="ListEvacuation" action="ListEvacuation" />
+        <s:a href="%{ListEvacuation}">Evacuations</s:a>
+      </li>
+      <li style="align-items: center;">
+        <s:url var="ListEvacuee" action="ListEvacuee" />
+        <s:a href="%{ListEvacuee}">Evacuee</s:a>
+      </li>
+      <li style="align-items: center;">
+        <s:url var="ListDonation" action="ListDonation" />
+        <s:a href="%{ListDonation}">Donation</s:a>
+      </li>
+      <li style="align-items: center;">
+        <s:url var="Weather" action="Weather" />
+        <s:a href="%{Weather}">Weather Forcast</s:a>
+      </li>
         <li style="float:right">
-          <s:url var="loginPage" action="LoginA" />
-          <s:a href="%{loginPage}">Login</s:a>
-        </li>
-        <li style="float:right">
-          <s:url var="Register" action="Register" />
-          <s:a href="%{Register}">Register</s:a>
+         
+          <a href="https://weatherforcasts.hub.loginradius.com/auth.aspx?action=logout&return_url=http://localhost:8080/basic-struts/index" >Logout </a>
         </li>
       </ul>
 </nav>
-<footer>
-  <span>2022</span>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up" style="color: white;"></span>
+  </a>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
 </footer>

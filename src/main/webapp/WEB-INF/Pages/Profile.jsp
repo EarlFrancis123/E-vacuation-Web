@@ -101,6 +101,7 @@ div {
     <main>
       <header class="center">
         <h2>User Details</h2>
+        <button type="button" class="btn btn-secondary btn-sm"> <a href="https://weatherforcasts.hub.loginradius.com/auth.aspx?action=logout&return_url=http://localhost:8080/basic-struts/index" >Logout</a></button>
       </header>
       <div class="w3-content w3-margin-top" style="max-width:1400px;">
 

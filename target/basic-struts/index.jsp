@@ -47,13 +47,11 @@
         width: 100%;
         height: auto;
       }
-      span{
-     
-      }
+      
     </style>
   </head>
   <body>
-    <s:include value="/WEB-INF/Pages/Menu.jsp"/>
+    <s:include value="/WEB-INF/Pages/Menu2.jsp"/>
 
     <main>
   

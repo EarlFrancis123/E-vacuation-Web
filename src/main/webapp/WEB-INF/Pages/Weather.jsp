@@ -48,13 +48,13 @@
             <div class="row d-flex justify-content-center px-3">
                 <div class="card">
                     <h2 class="ml-auto mr-4 mt-3 mb-0">    <s:property value="weatherResponse.request.query"/><br/></h2>
-                    <p class="ml-auto mr-4 mb-0 med-font">Snow</p>
+                    <p class="ml-auto mr-4 mb-0 med-font">Wind Speed: <s:property value="weatherResponse.current.wind_speed"/></p>
                     <h1 class="ml-auto mr-4 large-font"> <s:property value="weatherResponse.current.temperature"/>C&#176;</h1>
-                    <p class="time-font mb-0 ml-4 mt-auto">08:30 <span class="sm-font">AM</span></p>
-                    <p class="ml-4 mb-4">Wednesday, 18 October 2019</p>
+                    <p class="time-font mb-0 ml-4 mt-auto"><s:property value="weatherResponse.location.localtime"/></p>
+                    <p class="ml-4 mb-4">Observation Time: <s:property value="weatherResponse.current.observation_time"/></p>
                 </div>
-            </div>
         </div>
+ 
     </main>
   </body>
 </html>

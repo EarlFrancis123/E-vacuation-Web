@@ -11,12 +11,11 @@
 
         <default-action-ref name="HelloWorld" />
         
-        <action name="HelloWorld" class="project.example.HelloWorld">
+        <action name="HelloWorld" class="project.example.action.HelloWorld">
             <result>/WEB-INF/example/HelloWorld.jsp</result>
         </action>
 
-
-        <action name="*" class="project.example.ExampleSupport">
+        <action name="*" class="project.example.action.ExampleSupport">
             <result>/WEB-INF/example/{1}.jsp</result>
         </action>
 

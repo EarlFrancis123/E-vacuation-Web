@@ -80,30 +80,37 @@ li a {
 </style>
 <nav>
     <ul>
-        <li style="align-items: center;">
-          <s:url var="homePage" value="/" />
-          <s:a href="%{homePage}">Home</s:a>
-        </li>
-        <li style="align-items: center;">
-          <s:url var="aboutPage" action="About" />
-          <s:a href="%{aboutPage}">About</s:a>
-        </li>
-        <li style="align-items: center;">
-          <s:url var="OurServices" action="OurServices" />
-          <s:a href="%{OurServices}">Our Service</s:a>
-        </li>
-    
-        <li style="align-items: center;">
-          <s:url var="ContactUs" action="ContactUs" />
-          <s:a href="%{ContactUs}">Contact Us</s:a>
-        </li>
+      <li style="align-items: center;">
+        <s:url var="AddEvacuation" action="AddEvacuation" />
+        <s:a href="%{AddEvacuation}">Add Evacuations</s:a>
+      </li>
+      <li style="align-items: center;">
+        <s:url var="Evacuee" action="Evacuee" />
+        <s:a href="%{Evacuee}">Add Evacuee</s:a>
+      </li>
+      <li style="align-items: center;">
+        <s:url var="AddDonation" action="AddDonation" />
+        <s:a href="%{AddDonation}">Add Donation</s:a>
+      </li>
+      <li style="align-items: center;">
+        <s:url var="ListEvacuation" action="ListEvacuation" />
+        <s:a href="%{ListEvacuation}">Evacuations List</s:a>
+      </li>
+      <li style="align-items: center;">
+        <s:url var="ListEvacuee" action="ListEvacuee" />
+        <s:a href="%{ListEvacuee}">Evacuee List</s:a>
+      </li>
+      <li style="align-items: center;">
+        <s:url var="ListDonation" action="ListDonation" />
+        <s:a href="%{ListDonation}">Donation List</s:a>
+      </li>
+      <li style="align-items: center;">
+        <s:url var="Weather" action="Weather" />
+        <s:a href="%{Weather}">Weather Forcast</s:a>
+      </li>
         <li style="float:right">
-          <s:url var="loginPage" action="LoginA" />
-          <s:a href="%{loginPage}">Login</s:a>
-        </li>
-        <li style="float:right">
-          <s:url var="Register" action="Register" />
-          <s:a href="%{Register}">Register</s:a>
+          <s:url var="Logout" action="Logout" />
+          <s:a href="%{Logout}">Logout</s:a>
         </li>
       </ul>
 </nav>

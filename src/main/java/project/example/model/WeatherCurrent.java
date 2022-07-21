@@ -1,16 +1,18 @@
 package project.example.model;
 
 
+
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class WeatherCurrent {;
+public class WeatherCurrent {
     private String observation_time;
     private String temperature;
     private String weather_code;
     private String humidity;
     private String wind_speed;
-    
 
+   
     public String getObservation_time() {
         return observation_time;
     }
@@ -41,6 +43,12 @@ public class WeatherCurrent {;
     public void setWind_speed(String wind_speed) {
         this.wind_speed = wind_speed;
     }
+ 
+ 
+  
+    
+  
+
     
     
     

@@ -7,6 +7,15 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class WeatherResponse {
     private WeatherRequest request;
     private WeatherCurrent current;
+    private WeatherLocation location;
+    
+    public WeatherLocation getLocation() {
+        return location;
+    }
+
+    public void setLocation(WeatherLocation location) {
+        this.location = location;
+    }
 
     public WeatherCurrent getCurrent() {
         return current;
