@@ -12,6 +12,7 @@ public class AddEvacuation extends ExampleSupport {
     private Evacuation evacuationBean;
     private String error = "Random";
     String encryptedText;
+    String evacuationStatus = "Active";
 
 
     public String execute() throws Exception {
@@ -28,12 +29,12 @@ public class AddEvacuation extends ExampleSupport {
         Statement statement = null;
         try {
             String URL = "jdbc:mysql://localhost:3306/mydb?useTimezone=true&serverTimezone=UTC";
-            Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(URL, "root", "Loveleycute30");
+                Class.forName("com.mysql.jdbc.Driver");
+                connection = DriverManager.getConnection(URL, "root", "Loveleycute30");
 
             if (connection != null) {
                 statement = connection.createStatement();
-                String sql = "INSERT INTO evacuation(evacuationName, evacuationNumber, evacuationAddress,evacuationBarangay,evacuationCapacity) VALUES('"+evacuationBean.getEvacuationName()+"','"+evacuationBean.getEvacuationNumber()+"','"+evacuationBean.getEvacuationAddress()+"','"+evacuationBean.getEvacuationAddress()+"','"+evacuationBean.getEvacuationCapacity()+"')";
+                String sql = "INSERT INTO evacuation(evacuationName, evacuationNumber, evacuationAddress,evacuationBarangay,evacuationCapacity,evacuationStatus) VALUES('"+evacuationBean.getEvacuationName()+"','"+evacuationBean.getEvacuationNumber()+"','"+evacuationBean.getEvacuationAddress()+"','"+evacuationBean.getEvacuationAddress()+"','"+evacuationBean.getEvacuationCapacity()+"','"+evacuationStatus+"')";
                 statement.executeUpdate(sql);
                 return true;
             } else {

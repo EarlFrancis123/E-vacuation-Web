@@ -36,8 +36,9 @@ public class ListDonation extends ActionSupport {
 
                 while(rs.next()){  
                     Donation donation=new Donation();
-                    donation.setWater(rs.getString(2));   
-                    donation.setFood(rs.getString(3)); 
+                    donation.setIddonations(rs.getInt(1));   
+                    donation.setWater(rs.getString(3));   
+                    donation.setFood(rs.getString(8)); 
                     donation.setMedicine(rs.getString(4));
                     donation.setClothes(rs.getString(5));; 
                     donation.setSponsor(rs.getString(6));;

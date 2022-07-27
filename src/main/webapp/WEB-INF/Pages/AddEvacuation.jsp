@@ -22,25 +22,29 @@
                 <s:form action="addevacuation" style="margin-right: 10px; margin-left: 20px;" >
   
                   <div class="form-outline mb-4">
-                    
-                    <s:textfield name="evacuationBean.evacuationName"  label="Evacuation Name"   class="form-control form-control-lg" required="true"/>
+                    <label class="form-label" for="form2Example28">Evacuation Name</label>
+                    <s:textfield name="evacuationBean.evacuationName"  id="form2Example28"   class="form-control form-control-lg" required="true"/>
                   </div>
   
                   <div class="form-outline mb-4">
-                    <s:textfield name="evacuationBean.evacuationNumber"  label="Evacuation Number"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                    <label class="form-label" for="EvacuationNumber">Contact Number</label>
+                    <s:textfield name="evacuationBean.evacuationNumber"  id="EvacuationNumber"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
                   </div>
 
   
                   <div class="form-outline mb-4">
-                    <s:textfield name="evacuationBean.evacuationAddress"  label="Evacuation Address"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                    <label class="form-label" for="EvacuationAddress">Evacuation Address</label>
+                    <s:textfield name="evacuationBean.evacuationAddress"  id="Evacuation Address"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <s:textfield name="evacuationBean.evacuationBarangay"  label="Barangay"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                    <label class="form-label" for="Barangay">Barangay</label>
+                    <s:textfield name="evacuationBean.evacuationBarangay"  id="Barangay"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <s:textfield name="evacuationBean.evacuationCapacity"  label="Total Capacity"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                    <label class="form-label" for="TotalCapacity">TotalCapacity</label>
+                    <s:textfield name="evacuationBean.evacuationCapacity"  id="Total Capacity"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
                   </div>
                  
   

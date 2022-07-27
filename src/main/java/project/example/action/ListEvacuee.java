@@ -36,6 +36,7 @@ public class ListEvacuee extends ActionSupport {
 
                 while(rs.next()){  
                     Evacuee evacuee=new Evacuee();
+                    evacuee.setIdevacuee(rs.getInt(1));
                     evacuee.setFirstName(rs.getString(3));   
                     evacuee.setLastname(rs.getString(4)); 
                     evacuee.setContactNumber(rs.getString(5));

@@ -15,12 +15,13 @@ prefix="sx" uri="/struts-dojo-tags" %>
     <div class="jumbotron text-center" style="background-image: url('https://www.ready.gov/sites/default/files/2022-06/volunteer.gif') ;">
       <h1 style="color: rgb(231, 74, 68); font-family: Fantasy;">Evacuee List</h1> 
       <p style="color: rgb(243, 239, 239);">We specialize in blablabla</p> 
-      <s:form action="SearchEvacuee" style="margin-left: 22%;">
+      <s:form action="SearchEvacuee" style="margin-left: 22%; margin-right: 22%;">
         <div class="input-group">
              <s:textfield name="search" class="form-control" size="50" /> 
           <div class="input-group-btn">
-            <s:submit value="Search" class="btn btn-danger"  style="margin-top: 5%; margin-right: 35%;" />
+            <s:submit value="Search" class="btn btn-success"  style="  margin-right: 35%;" />
           </div>
+          
         </div>
         </div>
       </s:form>
@@ -53,7 +54,35 @@ prefix="sx" uri="/struts-dojo-tags" %>
   <s:property value="address"/><br/>  
   <b>Evacuation Name: </b>
   <s:property value="evacuationName"/><br/>  
-  <s:submit value="Delete" class="btn btn-danger" />
+
+    <div class="input-group" style="margin-left: 80%;">
+
+   
+  
+      <div class="input-group-btn"  style="margin-left: 5%;">
+        <s:url var="updateEvacuee" action="UpdateEvacuee" >
+                            <s:param name="idevacuee" value="idevacuee" />
+                        </s:url>
+                        
+   <div class="input-group-btn" >
+        <s:a href="%{updateEvacuee}" class="btn btn-success"  onclick="return confirm('Are you sure you want to delete this evacuee?')"><i >Update</i></s:a> 
+      </div>
+      </div>
+
+  
+      <div class="input-group-btn"  style="margin-right: 10%;">
+        <s:url var="deleteEvacuee" action="DeleteEvacuee" >
+                            <s:param name="idevacuee" value="idevacuee" />
+                        </s:url>
+                        
+   <div class="input-group-btn" style="margin-right: 30%;">
+        <s:a href="%{deleteEvacuee}" class="btn btn-danger"  onclick="return confirm('Are you sure you want to delete this evacuee?')"><i >Delete</i></s:a> 
+      </div>
+      </div>
+
+    </div>
+    </div>
+
   </fieldset>  
   </s:iterator>
   <div class="d-flex justify-content-center">

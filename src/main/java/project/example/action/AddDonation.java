@@ -8,13 +8,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import project.example.model.Donation;
+import project.example.model.Evacuation;
 public class AddDonation extends ExampleSupport {
     private static final long serialVersionUID = 1L;
     
     private Donation donationBean;
     private String error = "Random";
     String encryptedText;
-    Donation donation=new Donation();
+    Evacuation evacuation=new Evacuation();
 
     public String execute() throws Exception {
         donationBean = getDonationBean() ;
@@ -32,7 +33,7 @@ public class AddDonation extends ExampleSupport {
 
                 while(rs.next()){  
                
-                    donation.setEvacuationName(rs.getString(1));   
+                    evacuation.setEvacuationName(rs.getString(1));   
                    
                 }
             } 
@@ -56,7 +57,7 @@ public class AddDonation extends ExampleSupport {
 
             if (connection != null) {
                 statement = connection.createStatement();
-                String sql = "INSERT INTO donations(idevacuation,water, food, medicine,clothes,sponsor,evacuationName) VALUES('"+donation.getEvacuationName()+"','"+donationBean.getWater()+"','"+donationBean.getFood()+"','"+donationBean.getMedicine()+"','"+donationBean.getClothes()+"','"+donationBean.getSponsor()+"','"+donationBean.getEvacuationName()+"')";
+                String sql = "INSERT INTO donations(idevacuation,water, food, medicine,clothes,sponsor,evacuationName) VALUES('"+2+"','"+donationBean.getWater()+"','"+donationBean.getFood()+"','"+donationBean.getMedicine()+"','"+donationBean.getClothes()+"','"+donationBean.getSponsor()+"','"+donationBean.getEvacuationName()+"')";
                 statement.executeUpdate(sql);
                 return true;
             } else {
@@ -91,6 +92,7 @@ public class AddDonation extends ExampleSupport {
     public void setError(String error) {
         this.error = error;
     }
+
 
 
 

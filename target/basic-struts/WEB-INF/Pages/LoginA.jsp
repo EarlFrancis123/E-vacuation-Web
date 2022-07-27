@@ -15,58 +15,59 @@ s:textfield{
 </head>
   <body>
     <s:include value="Menu2.jsp" />
-    <section class="">
-      <!-- Jumbotron -->
-      <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
-        <div class="container">
-          <div class="row gx-lg-5 align-items-center">
-            <div class="col-lg-6 mb-5 mb-lg-0">
-              <h1 class="my-5 display-3 fw-bold ls-tight">
-                E-vacuation <br />
-                <span class="text-primary">A guide to safety</span>
-              </h1>
-              <p style="color: hsl(217, 10%, 50.8%)">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, itaque accusantium odio, soluta, corrupti aliquam
-                quibusdam tempora at cupiditate quis eum maiores libero
-                veritatis? Dicta facilis sint aliquid ipsum atque?
-              </p>
-            </div>
+
+    <section class="vh-100" style="background-color: #9A616D;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-xl-10">
+            <div class="card" style="border-radius: 1rem;">
+              <div class="row g-0">
+                <div class="col-md-6 col-lg-5 d-none d-md-block">
+                  <img src="https://static.vecteezy.com/system/resources/previews/002/737/795/non_2x/online-registration-form-and-sign-in-button-concept-illustration-login-illustration-online-registration-illustrations-free-vector.jpg"
+                    alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; margin-top: 40%; margin-left: 15%;"  />
+                </div>
+                <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                  <div class="card-body p-4 p-lg-5 text-black">
     
-            <div class="col-lg-6 mb-5 mb-lg-0">
-              <div class="card">
-                <div class="card-body py-5 px-md-5">
-                  <s:form action="LoginB" class="form" style="margin-left: 40px;">
-                  
-                      <h1>SING IN</h1>
-                    <!-- Email input -->
-                    <div class="form-outline mb-4">
-                      <s:textfield name="personBean.email"  label ="Email" class="form-control" required="true" />  
-                    </div>
+                    <s:form action="LoginB" class="form" style="margin-left: 40px;">
     
-                    <!-- Password input -->
-                    <div class="form-outline mb-4">
-                      <s:textfield name="personBean.password"  label="Password"  class="form-control"  required="true"/>
-                    </div>
+                      <div class="d-flex align-items-center mb-3 pb-1">
+                        <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                        <span class="h1 fw-bold mb-0">E - Vacuation</span>
+                      </div>
     
-                  
+                      <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
     
-                    <!-- Submit button -->
-                
-                    <s:submit value="Sign in" class="btn btn-primary btn-block mb-4" />
-                     
-               
-                  
+                      <div class="form-outline mb-4">
+                        <s:textfield name="personBean.email"  label ="Email" id="form2Example17" class="form-control form-control-lg" required="true" />  
+                        <label class="form-label" for="form2Example17">Email address</label>
+                      </div>
+    
+                      <div class="form-outline mb-4">
+                        <s:textfield name="personBean.password"  label="Password"  id="form2Example27" class="form-control form-control-lg"   required="true"/>
+                        <label class="form-label" for="form2Example27">Password</label>
+                      </div>
+    
+                      <div class="pt-1 mb-4">
+
+                        <s:submit value="Sign in" class="btn btn-dark btn-lg btn-block" type="button"/>
+                      </div>
+    
+                      <a class="small text-muted" href="#!">Forgot password?</a>
+                      <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="http://localhost:8080/basic-struts/Register.xhtml"
+                          style="color: #393f81;">Register here</a></p>
+                      <a href="#!" class="small text-muted">Terms of use.</a>
+                      <a href="#!" class="small text-muted">Privacy policy</a>
                     </s:form>
-                    <p>Not Yet Registered? <a href="http://localhost:8080/basic-struts/Register.xhtml">Click Here</a></p>
+    
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Jumbotron -->
     </section>
-  
+    
   </body>
 </html>

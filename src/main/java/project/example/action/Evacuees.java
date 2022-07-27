@@ -21,7 +21,7 @@ public class Evacuees extends ActionSupport {
             String URL = "jdbc:mysql://localhost:3306/mydb?useTimezone=true&serverTimezone=UTC";
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(URL, "root", "Loveleycute30");
-
+            
             if (connection != null) {
                 String sql = "SELECT * FROM evacuation";
                 preparedStatement = connection.prepareStatement(sql);

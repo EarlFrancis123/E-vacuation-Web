@@ -5,6 +5,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Evacuee {
+    private int idevacuee;
     private String firstName;
     private String lastname;
     private String contactNumber;
@@ -12,7 +13,8 @@ public class Evacuee {
     private String Address;
     private String evacuationName;
     public Evacuee() {}
-    public Evacuee(String firstName, String lastname, String contactNumber, String gender, String address, String evacuationName) {
+    public Evacuee(int idevacuee,String firstName, String lastname, String contactNumber, String gender, String address, String evacuationName) {
+        this.idevacuee = idevacuee;
         this.firstName = firstName;
         this.lastname = lastname;
         this.contactNumber = contactNumber;
@@ -32,6 +34,7 @@ public class Evacuee {
         }
         Evacuee evacuee = (Evacuee) obj;
         return new EqualsBuilder()
+                .append(this.idevacuee, evacuee.idevacuee)
                 .append(this.firstName, evacuee.firstName)
                 .append(this.lastname, evacuee.lastname)
                 .append(this.contactNumber, evacuee.contactNumber)
@@ -44,6 +47,7 @@ public class Evacuee {
     @Override
     public int hashCode() {
         return new HashCodeBuilder() 
+        .append(idevacuee)
                 .append(firstName)
                 .append(lastname)
                 .append(contactNumber)
@@ -56,6 +60,7 @@ public class Evacuee {
     @Override
     public String toString() {
         return new ToStringBuilder(this)
+        .append("idevacuee", idevacuee)
                 .append("firstName", firstName)
                 .append("lastName", lastname)
                 .append("contactNumber", contactNumber)
@@ -100,6 +105,13 @@ public class Evacuee {
     public void setEvacuationName(String evacuationName) {
         this.evacuationName = evacuationName;
     }
+    public int getIdevacuee() {
+        return idevacuee;
+    }
+    public void setIdevacuee(int idevacuee) {
+        this.idevacuee = idevacuee;
+    }
+    
     
    
 

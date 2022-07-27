@@ -1,0 +1,76 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      </head>
+  <body>
+    <s:include value="Menu.jsp" />
+    <section class="vh-100 bg-image"
+>
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card" style="border-radius: 15px;">
+              <div class="card-body p-5">
+                <h2 class="text-uppercase text-center mb-5">UPDATE EVACUEE</h2>
+  
+                <s:form action="UpdateE" style="margin-right: 10px; margin-left: 20px;" >
+  
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="FirstName">First Name</label>
+                        <s:textfield name="evacueeBean.firstName"  id="First Name"   class="form-control form-control-lg" required="true" />
+                      </div>
+      
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="LastName">Last Name</label>
+                        <s:textfield name="evacueeBean.lastname"  label="Last Name"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                      </div>
+    
+      
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="Number">Number</label>
+                        <s:textfield name="evacueeBean.contactNumber"  id="Number"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                      </div>
+    
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="Gender">Gender</label>
+                        <s:textfield name="evacueeBean.gender"  id="Gender"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                      </div>
+    
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="Address">Address</label>
+                        <s:textfield name="evacueeBean.address"  id="Address"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                      </div>
+                    <s:select label="Evacuation Name" 
+                    headerKey="-1" headerValue="Select Evacuation"
+                    list="evacuations" 
+                    name="evacueeBean.evacuationName" 
+                    value="defaultSearchEngine" />
+                 
+              
+  
+                  <div class="d-flex justify-content-center">
+                      <s:submit value="Update Evacuee" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" style="margin-top: 20px;" />
+                  </div>
+                 
+  
+              
+  
+                </s:form>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  </body>
+</html>

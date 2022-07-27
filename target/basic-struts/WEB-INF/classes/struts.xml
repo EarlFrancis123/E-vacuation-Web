@@ -12,7 +12,7 @@
     <constant name="struts.mapper.class" value="org.apache.struts2.dispatcher.mapper.PrefixBasedActionMapper" />
     <constant name="struts.mapper.prefixMapping" value="/rest:rest,:struts"/>
     <constant name="struts.rest.namespace" value="/rest" />
-
+      <constant name="struts.ui.theme" value="simple"/>
     <include file="example.xml"/>
 
     <package name="default" namespace="/" extends="struts-default">
@@ -30,22 +30,40 @@
             <result>/WEB-INF/Pages/AddEvacuation.jsp</result>
          </action>
 
-         <action name="Evacuee" class="project.example.action.Evacuee">
+         <action name="Evacuee" class="project.example.action.Evacuees">
             <result>/WEB-INF/Pages/AddEvacuee.jsp</result>
          </action>
 
          <action name="ListEvacuation" class="project.example.action.ListEvacuation">
             <result>/WEB-INF/Pages/ListEvacuation.jsp</result>
          </action>
+          <action name="ListEvacuation2" class="project.example.action.ListEvacuation">
+            <result>/WEB-INF/Pages/ListEvacuation2.jsp</result>
+         </action>
+           <action name="SearchEvacuation" class="project.example.action.SearchEvacuation">
+            <result>/WEB-INF/Pages/ListEvacuation.jsp</result>
+         </action>
+         <action name="SearchEvacuee" class="project.example.action.SearchEvacuee">
+            <result>/WEB-INF/Pages/ListEvacuee.jsp</result>
+         </action>
+           <action name="SearchDonations" class="project.example.action.SearchDonation">
+            <result>/WEB-INF/Pages/ListDonation.jsp</result>
+         </action>
+         
+         
          
          <action name="ListDonation" class="project.example.action.ListDonation">
             <result>/WEB-INF/Pages/ListDonation.jsp</result>
          </action>
+      
 
          <action name="ListEvacuee" class="project.example.action.ListEvacuee">
             <result>/WEB-INF/Pages/ListEvacuee.jsp</result>
          </action>
 
+         <action name="ListEvacuee2" class="project.example.action.ListEvacuee">
+            <result>/WEB-INF/Pages/ListEvacuee2.jsp</result>
+         </action>
          <action name="Register" class="project.example.action.Register">
             <result>/WEB-INF/Pages/Register.jsp</result>
          </action>
@@ -53,6 +71,10 @@
          <action name="Weather" class="project.example.action.Weather">
             <result name="success">/WEB-INF/Pages/Weather.jsp</result>
          </action>
+            <action name="Weather2" class="project.example.action.Weather">
+            <result name="success">/WEB-INF/Pages/Weather2.jsp</result>
+         </action>
+
 
          <action name="list" class="project.example.action.List">
             <result>/WEB-INF/Pages/lists.jsp</result>
@@ -84,10 +106,13 @@
          <action name="LoginA" class="project.example.action.LoginA">
             <result>/WEB-INF/Pages/LoginA.jsp</result>
          </action>
+           <action name="landingPage" class="project.example.action.LoginA">
+            <result name="success">/WEB-INF/Pages/LandingPage.jsp</result>
+         </action>
 
          <action name="LoginB" class="project.example.action.LoginB">
               <interceptor-ref name="defaultStack"/>
-            <result name="success">/WEB-INF/Pages/Profile.jsp</result>
+            <result name="success">/WEB-INF/Pages/LandingPage.jsp</result>
             <result name="input">/WEB-INF/Pages/LoginA.jsp</result>
             <result name="error">/WEB-INF/Pages/error.jsp</result>
          </action>
@@ -99,6 +124,14 @@
          <action name="Profile" class="project.example.action.Profile">
             <result name="success">/WEB-INF/Pages/About.jsp</result>
             <result name="fail">/WEB-INF/Pages/LoginA.jsp</result>
+         </action>
+         <action name="DeleteEvacuee" class="project.example.action.DeleteEvacuee" method="execute">
+            <result name="success">/WEB-INF/Pages/ListEvacuee.jsp</result>
+            <result name="error">/WEB-INF/Pages/error.jsp</result>
+         </action>
+         <action name="DeleteDonation" class="project.example.action.DeleteDonation" method="execute">
+            <result name="success">/WEB-INF/Pages/ListDonation.jsp</result>
+            <result name="error">/WEB-INF/Pages/error.jsp</result>
          </action>
 
          <action name="displayUser" class="project.example.action.List" method="displayUser">

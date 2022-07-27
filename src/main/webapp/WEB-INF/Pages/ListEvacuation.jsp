@@ -23,16 +23,15 @@ prefix="sx" uri="/struts-dojo-tags" %>
     <div class="jumbotron text-center" style="background-image: url('https://www.ready.gov/sites/default/files/2019-09/evacuation_0.jpg');">
       <h1 style="color: rgb(231, 74, 68); font-family: Fantasy;">Evacuation List</h1> 
       <p>We specialize in blablabla</p> 
-      <s:form action="SearchEvacuation " style="margin-left: 22%;">
+      <s:form action="SearchEvacuation " style="margin-left: 22%; margin-right: 22%;">
         <div class="input-group">
              <s:textfield name="search"  class="form-control" size="50" /> 
           <div class="input-group-btn">
-            <s:submit value="Search" class="btn btn-danger"  style="margin-top: 5%; margin-right: 35%;"/>
+            <s:submit value="Search" class="btn btn-success"  style=" margin-right: 35%;"/>
           </div>
         </div>
       </s:form>
-      <br>
-      <br>
+      
     
      
     </div>
@@ -60,18 +59,34 @@ prefix="sx" uri="/struts-dojo-tags" %>
   <s:property value="evacuationBarangay"/><br/>  
   <b>Capacity:</b>
   <s:property value="evacuationCapacity"/><br/>  
-  <s:form action="SearchEvacuation "  style="margin-left: 70%;">
+  <b>Status:</b>
+  <s:property value="evacuationStatus"/><br/>  
+  <div class="input-group" style="margin-left: 80%;">
+    <div class="input-group-btn"  style="margin-left: 5%;">
+      <s:url var="updateEvacuee" action="UpdateEvacuee">
+              <s:param name="idevacuee" value="idevacuee" />
+      </s:url>      
       <div class="input-group-btn">
-        <s:submit value="Delete" class="btn btn-danger"  style="margin-top: 5%; "/>
-      </div>
+      <s:a href="%{deleteEvacuation}" class="btn btn-success"  onclick="return confirm('Are you sure you want to update Evacuation')"><i>Update</i></s:a> 
     </div>
-  </s:form>
+    </div>
+       <div class="input-group-btn"  style="margin-right: 10%;">
+        <s:url var="deleteEvacuation" action="DeleteEvacuation">
+                <s:param name="idevacuation" value="idevacuation" />
+        </s:url>      
+        <div class="input-group-btn">
+        <s:a href="%{deleteEvacuation}" class="btn btn-danger"  onclick="return confirm('Are you sure you want to delete delete Evacuation')"><i>Delete</i></s:a> 
+      </div>
+      </div>
+       </div>
+       </div>
   </fieldset >  
   </s:iterator>
  
   <div class="d-flex justify-content-center">
-    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 " style="margin-right: 45%; margin-left: 45%; scroll-margin-block-end: 20%;"  type="button"><a href="<s:url action='AddEvacuation' />" style="color: aliceblue;" >ADD EVACUATION</a></button>
+    <button id="" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 " style="margin-right: 45%; margin-left: 45%; scroll-margin-block-end: 20%;"  type="button"><a href="<s:url action='AddEvacuation' />" style="color: aliceblue;" >ADD EVACUATION</a></button>
  </div>
+ 
  <br>
  <br>
  <br>

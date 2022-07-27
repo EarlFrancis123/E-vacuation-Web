@@ -22,24 +22,29 @@
                 <s:form action="addevacuee" style="margin-right: 10px; margin-left: 20px;" >
   
                   <div class="form-outline mb-4">
-                    <s:textfield name="evacueeBean.firstName"  label="First Name"   class="form-control form-control-lg" required="true"/>
+                    <label class="form-label" for="FirstName">First Name</label>
+                    <s:textfield name="evacueeBean.firstName"  id="First Name"   class="form-control form-control-lg" required="true"/>
                   </div>
   
                   <div class="form-outline mb-4">
+                    <label class="form-label" for="LastName">Last Name</label>
                     <s:textfield name="evacueeBean.lastname"  label="Last Name"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
                   </div>
 
   
                   <div class="form-outline mb-4">
-                    <s:textfield name="evacueeBean.contactNumber"  label="Number"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                    <label class="form-label" for="Number">Number</label>
+                    <s:textfield name="evacueeBean.contactNumber"  id="Number"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <s:textfield name="evacueeBean.gender"  label="Gender"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                    <label class="form-label" for="Gender">Gender</label>
+                    <s:textfield name="evacueeBean.gender"  id="Gender"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <s:textfield name="evacueeBean.address"  label="Address"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                    <label class="form-label" for="Address">Address</label>
+                    <s:textfield name="evacueeBean.address"  id="Address"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
                   </div>
                     <s:select label="Evacuation Name" 
                     headerKey="-1" headerValue="Select Evacuation"

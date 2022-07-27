@@ -41,10 +41,12 @@
                   <div class="form-outline mb-4">
                     <s:textfield name="evacueeBean.address"  label="Address"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
                   </div>
-                  <div class="form-outline mb-4">
-                    <s:textfield name="evacueeBean.evacuationName"  label="Evacuation Name"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
-                  </div>
-  
+                    <s:select label="Evacuation Name" 
+                    headerKey="-1" headerValue="Select Evacuation"
+                    list="evacuations" 
+                    name="evacueeBean.evacuationName" 
+                    value="defaultSearchEngine" />
+                 
               
   
                   <div class="d-flex justify-content-center">

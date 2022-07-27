@@ -20,6 +20,7 @@
       <s:textfield name="personBean.email"  label ="Email"/>  
       <s:textfield name="personBean.age"  label="Age"  />
       <s:submit/>
+      
     </s:form>
     </main>
   </body>

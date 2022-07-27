@@ -5,6 +5,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Donation {
+    private Integer iddonations;
     private String Water;
     private String Food;
     private String Medicine;
@@ -13,7 +14,8 @@ public class Donation {
     private String EvacuationName;
     
     public Donation() {}
-    public Donation(String Water, String Food, String Medicine, String Clothes, String Sponsor,  String EvacuationName) {
+    public Donation(Integer iddonations,String Water, String Food, String Medicine, String Clothes, String Sponsor,  String EvacuationName) {
+        this.iddonations = iddonations;
         this.Water = Water;
         this.Food = Food;
         this.Medicine = Medicine;
@@ -33,6 +35,7 @@ public class Donation {
         }
         Donation donation = (Donation) obj;
         return new EqualsBuilder()
+        .append(this.iddonations, donation.iddonations)
                 .append(this.Water, donation.Water)
                 .append(this.Food, donation.Food)
                 .append(this.Medicine, donation.Medicine)
@@ -45,6 +48,7 @@ public class Donation {
     @Override
     public int hashCode() {
         return new HashCodeBuilder() 
+        .append(iddonations)
                 .append(Water)
                 .append(Food)
                 .append(Medicine)
@@ -57,6 +61,7 @@ public class Donation {
     @Override
     public String toString() {
         return new ToStringBuilder(this)
+        .append("iddonations", iddonations)
                 .append("Water", Water)
                 .append("Food", Food)
                 .append("Medicine", Medicine)
@@ -101,6 +106,14 @@ public class Donation {
     public void setEvacuationName(String evacuationName) {
         EvacuationName = evacuationName;
     }
+    public Integer getIddonations() {
+        return iddonations;
+    }
+    public void setIddonations(Integer iddonations) {
+        this.iddonations = iddonations;
+    }
+    
+    
     
    
 

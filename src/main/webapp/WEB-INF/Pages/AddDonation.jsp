@@ -22,33 +22,46 @@
                 <s:form action="adddonation" style="margin-right: 10px; margin-left: 20px;" >
   
                   <div class="form-outline mb-4">
-                    
-                    <s:textfield name="donationBean.Water"  label="Water"   class="form-control form-control-lg" required="true"/>
+                    <label class="form-label" for="form2Example27">Water</label>
+                    <s:textfield name="donationBean.Water"  id="form2Example27"   class="form-control form-control-lg" required="true"/>
+          
                   </div>
   
                   <div class="form-outline mb-4">
-                    <s:textfield name="donationBean.Food"  label="Food"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                    <label class="form-label" for="form2Example28">Food</label>
+                    <s:textfield name="donationBean.Food"  id="form2Example28"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                  
                   </div>
 
   
                   <div class="form-outline mb-4">
-                    <s:textfield name="donationBean.Medicine"  label="Medicine"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                    <label class="form-label" for="form2Example29">Medicine</label>
+                <s:textfield name="donationBean.Medicine"  id="form2Example29" class="form-control form-control-lg" required="true" style="margin-top: 30px "/>
+          
                   </div>
 
                   <div class="form-outline mb-4">
-                    <s:textfield name="donationBean.Clothes"  label="Clothes"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                    <label class="form-label" for="form2Example30">Clothes</label>
+                    <s:textfield name="donationBean.Clothes" id="form2Example30"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+      
                   </div>
 
                   <div class="form-outline mb-4">
-                    <s:textfield name="donationBean.Sponsor"  label="Sponsor"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+                    <label class="form-label" for="form2Example30">Sponsor</label>
+                    <s:textfield name="donationBean.Sponsor"  id="form2Example31"  class="form-control form-control-lg" required="true" style="margin-top: 30px" />
+         
                   </div>
+                  <label class="form-label" for="form2Example31">Evacuation Name</label>
+                  
+               
+                  
+          
                   <s:select label="Evacuation Name" 
                   headerKey="-1" headerValue="Select Evacuation"
                   list="evacuations" 
                   name="evacueeBean.evacuationName" 
-                  value="defaultSearchEngine" />
-                 
-  
+                  value="defaultSearchEngine" 
+                  id="form2Example31"/>
               
   
                   <div class="d-flex justify-content-center">

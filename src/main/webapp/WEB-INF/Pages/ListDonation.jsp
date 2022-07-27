@@ -17,11 +17,11 @@ prefix="sx" uri="/struts-dojo-tags" %>
     <div class="jumbotron text-center" style="background-image: url('https://www.ready.gov/sites/default/files/2019-09/Build%20a%20Kit_0.jpg');">
       <h1 style="color: rgb(231, 74, 68); font-family: Fantasy;">Donation List</h1> 
       <p style="color: rgb(0, 0, 0);">We specialize in blablabla</p> 
-      <s:form action="SearchDonation " style="margin-left: 22%;">
-        <div class="input-group">
+      <s:form action="SearchDonation " style="margin-left: 22%; margin-right: 22%;">
+        <div class="input-group" >
              <s:textfield name="search"  class="form-control" size="50" /> 
           <div class="input-group-btn">
-            <s:submit value="Search" class="btn btn-danger"  style="margin-top: 5%; margin-right: 35%;"/>
+            <s:submit value="Search" class="btn btn-success"  style=" margin-right: 35%;"/>
           </div>
         </div>
       </s:form>
@@ -54,9 +54,30 @@ prefix="sx" uri="/struts-dojo-tags" %>
   <s:property value="Water"/><br/>  
   <b>Clothes:</b>
   <s:property value="Clothes"/><br/>  
-  <b>Medicine:</b>
+  <b>Medicine:</b>  
   <s:property value="Medicine"/><br/>  
-  <s:submit value="Delete" class="btn btn-danger" />
+  <div class="input-group" style="margin-left: 80%;">
+    <div class="input-group-btn"  style="margin-left: 5%;">
+      <s:url var="deleteDonation" action="DeleteDonation">
+                          <s:param name="iddonations" value="iddonations" />
+                      </s:url>
+                      
+ <div class="input-group-btn">
+      <s:a href="%{deleteDonation}" class="btn btn-success"  onclick="return confirm('Are you sure you want to delete this Donation')"><i >Update</i></s:a> 
+    </div>
+    </div>
+     
+       <div class="input-group-btn"  style="margin-right: 10%;">
+        <s:url var="deleteDonation" action="DeleteDonation">
+                            <s:param name="iddonations" value="iddonations" />
+                        </s:url>
+                        
+   <div class="input-group-btn">
+        <s:a href="%{deleteDonation}" class="btn btn-danger"  onclick="return confirm('Are you sure you want to delete this Donation')"><i >Delete</i></s:a> 
+      </div>
+      </div>
+       </div>
+       </div>
   </fieldset >  
   </s:iterator>
  

@@ -14,7 +14,7 @@
 }
 
 .card {
-    background-image: url("https://i.imgur.com/dpqZJV5.jpg");
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
     background-size: cover;
     width: 600px;
     height: 350px;
@@ -44,6 +44,7 @@
   <body>
     <s:include value="Menu.jsp" /> 
     <main>
+        <h1 style="margin-left: 40%; margin-top: 10%;">Cebu's Weather Forcast</h1>
         <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
             <div class="row d-flex justify-content-center px-3">
                 <div class="card">

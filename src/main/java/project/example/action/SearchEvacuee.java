@@ -37,12 +37,12 @@ public class SearchEvacuee extends ActionSupport {
 
                 while(rs.next()){  
                     Evacuee evacuee=new Evacuee();
-                    evacuee.setFirstName(rs.getString(2));   
-                    evacuee.setLastname(rs.getString(3)); 
-                    evacuee.setContactNumber(rs.getString(4));
-                    evacuee.setGender(rs.getString(5));; 
-                    evacuee.setAddress(rs.getString(6));; 
-                    evacuee.setEvacuationName(rs.getString(7));; 
+                    evacuee.setFirstName(rs.getString(3));   
+                    evacuee.setLastname(rs.getString(4)); 
+                    evacuee.setContactNumber(rs.getString(5));
+                    evacuee.setGender(rs.getString(6));; 
+                    evacuee.setAddress(rs.getString(7));; 
+                    evacuee.setEvacuationName(rs.getString(8));; 
                     evacuees.add(evacuee);  
                     listOfFirstNames.add(evacuee.getFirstName());
                 }

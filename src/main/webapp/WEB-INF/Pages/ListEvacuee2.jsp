@@ -15,11 +15,11 @@ prefix="sx" uri="/struts-dojo-tags" %>
     <div class="jumbotron text-center" style="background-image: url('https://www.ready.gov/sites/default/files/2022-06/volunteer.gif') ;">
       <h1 style="color: rgb(231, 74, 68); font-family: Fantasy;">Evacuee List</h1> 
       <p style="color: rgb(243, 239, 239);">We specialize in blablabla</p> 
-      <s:form action="SearchEvacuee" style="margin-left: 22%;">
+      <s:form action="SearchEvacuee" style="margin-left: 22%; margin-right: 22%;">
         <div class="input-group">
              <s:textfield name="search" class="form-control" size="50" /> 
           <div class="input-group-btn">
-            <s:submit value="Search" class="btn btn-danger"  style="margin-top: 5%; margin-right: 35%;" />
+            <s:submit value="Search" class="btn btn-success"  style=" margin-right: 35%;" />
           </div>
         </div>
         </div>

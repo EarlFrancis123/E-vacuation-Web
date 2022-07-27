@@ -23,16 +23,15 @@ prefix="sx" uri="/struts-dojo-tags" %>
     <div class="jumbotron text-center" style="background-image: url('https://www.ready.gov/sites/default/files/2019-09/evacuation_0.jpg');">
       <h1 style="color: rgb(231, 74, 68); font-family: Fantasy;">Evacuation List</h1> 
       <p>We specialize in blablabla</p> 
-      <s:form action="SearchEvacuation " style="margin-left: 22%;">
+      <s:form action="SearchEvacuation " style="margin-left: 22%; margin-right: 22%;">
         <div class="input-group">
              <s:textfield name="search"  class="form-control" size="50" /> 
           <div class="input-group-btn">
-            <s:submit value="Search" class="btn btn-danger"  style="margin-top: 5%; margin-right: 35%;"/>
+            <s:submit value="Search" class="btn btn-success"  style="margin-right: 35%;"/>
           </div>
         </div>
       </s:form>
-      <br>
-      <br>
+ 
     
      
     </div>
@@ -68,9 +67,13 @@ prefix="sx" uri="/struts-dojo-tags" %>
  <br>
  <br>
  <br>
- <div class="input-group-btn">
-  <s:submit value="Search" class="btn btn-danger"  style="margin-top: 5%; margin-right: 35%;"/>
-</div>
+ <button
+ type="button"
+ class="btn btn-danger btn-floating btn-lg"
+ id="btn-back-to-top"
+ >
+<i class="fas fa-arrow-up"></i>
+</button>
 <br>
 <br>
 
