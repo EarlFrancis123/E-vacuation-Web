@@ -34,7 +34,7 @@ public class AddEvacuation extends ExampleSupport {
 
             if (connection != null) {
                 statement = connection.createStatement();
-                String sql = "INSERT INTO evacuation(evacuationName, evacuationNumber, evacuationAddress,evacuationBarangay,evacuationCapacity,evacuationStatus) VALUES('"+evacuationBean.getEvacuationName()+"','"+evacuationBean.getEvacuationNumber()+"','"+evacuationBean.getEvacuationAddress()+"','"+evacuationBean.getEvacuationAddress()+"','"+evacuationBean.getEvacuationCapacity()+"','"+evacuationStatus+"')";
+                String sql = "INSERT INTO evacuation(evacuationName, evacuationNumber, evacuationAddress,evacuationBarangay,evacuationCapacity,evacuationStatus) VALUES('"+evacuationBean.getEvacuationName()+"','"+evacuationBean.getEvacuationNumber()+"','"+evacuationBean.getEvacuationAddress()+"','"+evacuationBean.getEvacuationBarangay()+"','"+evacuationBean.getEvacuationCapacity()+"','"+evacuationStatus+"')";
                 statement.executeUpdate(sql);
                 return true;
             } else {
