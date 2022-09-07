@@ -40,9 +40,9 @@ public class ListEvacuation extends ActionSupport {
                     evacuation.setEvacuationName(rs.getString(2));   
                     evacuation.setEvacuationNumber(rs.getString(3)); 
                     evacuation.setEvacuationAddress(rs.getString(4));
-                    evacuation.setEvacuationBarangay(rs.getString(4));
-                    evacuation.setEvacuationCapacity(rs.getString(5));
-                    evacuation.setEvacuationStatus(rs.getString(6));; 
+                    evacuation.setEvacuationBarangay(rs.getString(5));
+                    evacuation.setEvacuationCapacity(rs.getString(6));
+                    evacuation.setEvacuationStatus(rs.getString(7));
                     evacuations.add(evacuation);  
                     listOfFirstNames.add(evacuation.getEvacuationName());
                 }
