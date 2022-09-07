@@ -1,4 +1,5 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,14 +12,15 @@
 <header role="banner">
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container">
-  <a class="navbar-brand" href="http://localhost:8080/basic-struts/LoginB.xhtml">E-Vacuation</a>
+    <s:url var="LandingPage" action="LandingPage" />
+  <s:a class="navbar-brand" href="%{LandingPage}">E-Vacuation</s:a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarsExample05">
   <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
   <li class="nav-item">
-  <a class="nav-link active" href="index.jsp">Home</a>
+  <s:a class="nav-link active" href="%{LandingPage}">Home</s:a>
   </li>
   <li class="nav-item">
     <s:url var="ListEvacuation" action="ListEvacuation" />
