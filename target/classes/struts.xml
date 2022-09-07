@@ -33,6 +33,9 @@
          <action name="Evacuee" class="project.example.action.Evacuees">
             <result>/WEB-INF/Pages/AddEvacuee.jsp</result>
          </action>
+         <action name="LandingPage" class="project.example.action.LandingPage">
+            <result>/WEB-INF/Pages/LandingPage.jsp</result>
+         </action>
 
          <action name="ListEvacuation" class="project.example.action.ListEvacuation">
             <result>/WEB-INF/Pages/ListEvacuation.jsp</result>
