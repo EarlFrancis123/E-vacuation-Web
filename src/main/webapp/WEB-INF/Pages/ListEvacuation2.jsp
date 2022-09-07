@@ -61,6 +61,7 @@ prefix="sx" uri="/struts-dojo-tags" %>
   <s:property value="evacuationCapacity"/><br/>  
   <b>Status:</b>
   <s:property value="evacuationStatus"/><br/> 
+
   </fieldset >  
   </s:iterator>
  
