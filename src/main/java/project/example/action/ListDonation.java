@@ -38,11 +38,11 @@ public class ListDonation extends ActionSupport {
                     Donation donation=new Donation();
                     donation.setIddonations(rs.getInt(1));   
                     donation.setWater(rs.getString(3));   
-                    donation.setFood(rs.getString(8)); 
-                    donation.setMedicine(rs.getString(4));
-                    donation.setClothes(rs.getString(5));; 
-                    donation.setSponsor(rs.getString(6));;
-                    donation.setEvacuationName(rs.getString(7));; 
+                    donation.setFood(rs.getString(4)); 
+                    donation.setMedicine(rs.getString(5));
+                    donation.setClothes(rs.getString(6));; 
+                    donation.setSponsor(rs.getString(7));;
+                    donation.setEvacuationName(rs.getString(8));; 
            
                     donations.add(donation);  
                     listOfFirstNames.add(donation.getSponsor());
