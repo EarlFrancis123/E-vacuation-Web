@@ -59,7 +59,7 @@
                   <s:select label="Evacuation Name" 
                   headerKey="-1" headerValue="Select Evacuation"
                   list="evacuations" 
-                  name="evacueeBean.evacuationName" 
+                  name="donationBean.evacuationName" 
                   value="defaultSearchEngine" 
                   id="form2Example31"/>
               
