@@ -58,12 +58,12 @@ prefix="sx" uri="/struts-dojo-tags" %>
   <s:property value="Medicine"/><br/>  
   <div class="input-group" style="margin-left: 80%;">
     <div class="input-group-btn"  style="margin-left: 5%;">
-      <s:url var="deleteDonation" action="DeleteDonation">
+      <s:url var="updateDonation" action="UpdateDonation">
                           <s:param name="iddonations" value="iddonations" />
                       </s:url>
                       
  <div class="input-group-btn">
-      <s:a href="%{deleteDonation}" class="btn btn-success"  onclick="return confirm('Are you sure you want to delete this Donation')"><i >Update</i></s:a> 
+      <s:a href="%{updateDonation}" class="btn btn-success"  onclick="return confirm('Are you sure you want to delete this Donation')"><i >Update</i></s:a> 
     </div>
     </div>
      

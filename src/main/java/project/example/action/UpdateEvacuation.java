@@ -10,13 +10,13 @@ import java.sql.Statement;
 import com.opensymphony.xwork2.ActionSupport;
 import project.example.model.Evacuee;
 import project.example.model.Evacuation;
-public class UpdateEvacuee extends ActionSupport {
+public class UpdateEvacuation extends ActionSupport {
     public ArrayList evacuations = new ArrayList();
-    private int idevacuee;
-    private Evacuee evacueeBean;
+    private int idevacuation;
+    private Evacuation evacuationBean;
     Statement statement = null;
     public String execute() {
-        evacueeBean = getEvacueeBean();
+        evacuationBean = getEvacuationBean();
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         try {
@@ -31,11 +31,7 @@ public class UpdateEvacuee extends ActionSupport {
 
                 while(rs.next()){  
                     Evacuation evacuation=new Evacuation();
-                    evacuation.setEvacuationName(rs.getString(2));   
-                    evacuations.add(evacuation.getEvacuationName());
-
-                    Evacuee evacuee = new Evacuee();
-                    evacuee.setIdevacuee(idevacuee);
+                    evacuation.setIdevacuation(idevacuation);
 
                 }
             } 
@@ -62,17 +58,18 @@ public class UpdateEvacuee extends ActionSupport {
     public void setEvacuations(ArrayList evacuations) {
         this.evacuations = evacuations;
     }
-    public int getIdevacuee() {
-        return idevacuee;
+ 
+    public int getIdevacuation() {
+        return idevacuation;
     }
-    public void setIdevacuee(int idevacuee) {
-        this.idevacuee = idevacuee;
+    public void setIdevacuation(int idevacuation) {
+        this.idevacuation = idevacuation;
     }
-    public Evacuee getEvacueeBean() {
-        return evacueeBean;
+    public Evacuation getEvacuationBean() {
+        return evacuationBean;
     }
-    public void setEvacueeBean(Evacuee evacueeBean) {
-        this.evacueeBean = evacueeBean;
+    public void setEvacuationBean(Evacuation evacuationBean) {
+        this.evacuationBean = evacuationBean;
     }
     public Statement getStatement() {
         return statement;

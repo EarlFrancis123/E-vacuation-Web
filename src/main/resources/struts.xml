@@ -143,12 +143,26 @@
             <result name="success">/WEB-INF/Pages/ListEvacuee.jsp</result>
             <result name="error">/WEB-INF/Pages/error.jsp</result>
          </action>
+         <action name="UpdateD" class="project.example.action.UpdateD" method="execute">
+            <result name="success">/WEB-INF/Pages/ListDonation.jsp</result>
+            <result name="error">/WEB-INF/Pages/error.jsp</result>
+         </action>
+         <action name="UpdateE2" class="project.example.action.UpdateE2" method="execute">
+            <result name="success">/WEB-INF/Pages/ListEvacuation.jsp</result>
+            <result name="error">/WEB-INF/Pages/error.jsp</result>
+         </action>
           <action name="UpdateEvacuee" class="project.example.action.UpdateEvacuee" method="execute">
             <result name="success">/WEB-INF/Pages/UpdateEvacuee.jsp</result>
             <result name="error">/WEB-INF/Pages/error.jsp</result>
          </action>
-         
-
+         <action name="UpdateDonation" class="project.example.action.UpdateDonation" method="execute">
+            <result name="success">/WEB-INF/Pages/UpdateDonation.jsp</result>
+            <result name="error">/WEB-INF/Pages/error.jsp</result>
+         </action>
+            <action name="UpdateEvacuation" class="project.example.action.UpdateEvacuation" method="execute">
+            <result name="success">/WEB-INF/Pages/UpdateEvacuation.jsp</result>
+            <result name="error">/WEB-INF/Pages/error.jsp</result>
+         </action>
          <action name="displayUser" class="project.example.action.List" method="displayUser">
             <result name="success">/WEB-INF/Pages/welcome.jsp</result>
          </action>
