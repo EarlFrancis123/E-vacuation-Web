@@ -63,11 +63,11 @@ prefix="sx" uri="/struts-dojo-tags" %>
   <s:property value="evacuationStatus"/><br/>  
   <div class="input-group" style="margin-left: 80%;">
     <div class="input-group-btn"  style="margin-left: 5%;">
-      <s:url var="updateEvacuee" action="UpdateEvacuee">
-              <s:param name="idevacuee" value="idevacuee" />
+      <s:url var="UpdateEvacuation" action="UpdateEvacuation">
+              <s:param name="idevacuation" value="idevacuation" />
       </s:url>      
       <div class="input-group-btn">
-      <s:a href="%{deleteEvacuation}" class="btn btn-success"  onclick="return confirm('Are you sure you want to update Evacuation')"><i>Update</i></s:a> 
+      <s:a href="%{UpdateEvacuation}" class="btn btn-success"  onclick="return confirm('Are you sure you want to update Evacuation')"><i>Update</i></s:a> 
     </div>
     </div>
        <div class="input-group-btn"  style="margin-right: 10%;">

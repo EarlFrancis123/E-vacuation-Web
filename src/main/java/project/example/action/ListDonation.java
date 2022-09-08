@@ -43,7 +43,6 @@ public class ListDonation extends ActionSupport {
                     donation.setClothes(rs.getString(6));; 
                     donation.setSponsor(rs.getString(7));;
                     donation.setEvacuationName(rs.getString(8));; 
-           
                     donations.add(donation);  
                     listOfFirstNames.add(donation.getSponsor());
                 }

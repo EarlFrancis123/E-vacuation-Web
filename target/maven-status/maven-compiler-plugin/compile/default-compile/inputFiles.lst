@@ -1,5 +1,6 @@
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\model\Evacuee.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\ExampleSupport.java
+C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\UpdateE2.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\AddEvacuation.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\Register.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\Account.java
@@ -28,12 +29,15 @@ C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\ac
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\ListEvacuation.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\LoginA.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\model\Account.java
+C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\UpdateDonation.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\Evacuation.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\model\WeatherRequest.java
+C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\UpdateD.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\UpdateEvacuee.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\Logout.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\Donation.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\LandingPage.java
+C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\UpdateEvacuation.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\action\AddDonation.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\model\WeatherResponse.java
 C:\Users\NS_Laptop_2205\Desktop\E-vacuation-Web\src\main\java\project\example\model\Person.java

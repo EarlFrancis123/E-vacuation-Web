@@ -13,15 +13,15 @@ import java.util.ArrayList;
 
 import java.sql.ResultSet;
 
-import project.example.model.Evacuee;
-public class UpdateE extends ActionSupport {
-    private int idevacuee;
+import project.example.model.Donation;
+public class UpdateD extends ActionSupport {
+    private int iddonations;
     private int search;
     private String error;
     public ArrayList evacuations = new ArrayList();
-    private Evacuee evacueeBean;
+    private Donation donationBean;
     public String execute() throws Exception{
-        evacueeBean = getEvacueeBean();
+        donationBean = getDonationBean();
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         Statement statement = null;
@@ -35,14 +35,14 @@ public class UpdateE extends ActionSupport {
             try {
 
                 statement = connection.createStatement();
-                String sql1 = "UPDATE evacuee\n" + 
-                "SET first_name = " + "'" + evacueeBean.getFirstName() + "'," +
-                "last_name = " + "'" + evacueeBean.getLastname() + "'," +
-                "contactNumber = " + "'" + evacueeBean.getContactNumber() + "'," +
-                "gender = " + "'" + evacueeBean.getGender() + "'," +
-                "address = " + "'" + evacueeBean.getAddress() + "'," +
-                "evacuatioName = " + "'" + evacueeBean.getEvacuationName() + "'\n" +
-                "WHERE ( idevacuee = '" + 3 +"')";
+                String sql1 = "UPDATE donations\n" + 
+                "SET water = " + "'" + donationBean.getWater() + "'," +
+                "food = " + "'" + donationBean.getFood() + "'," +
+                "medicine = " + "'" + donationBean.getMedicine() + "'," +
+                "clothes = " + "'" +donationBean.getClothes()+ "'," +
+                "sponsor = " + "'" + donationBean.getSponsor() + "'," +
+                "evacuationName = " + "'" + donationBean.getEvacuationName()+ "'\n" +
+                "WHERE ( iddonations = '" + 6 +"')";
                 statement.executeUpdate(sql1);
              } catch (Exception e){
                 
@@ -72,15 +72,6 @@ public class UpdateE extends ActionSupport {
     public void setEvacuations(ArrayList evacuations) {
         this.evacuations = evacuations;
     }
-
-    public Evacuee getEvacueeBean() {
-        return evacueeBean;
-    }
-
-    public void setEvacueeBean(Evacuee evacueeBean) {
-        this.evacueeBean = evacueeBean;
-    }
-
     public String getError() {
         return error;
     }
@@ -89,12 +80,23 @@ public class UpdateE extends ActionSupport {
     public void setError(String error) {
         this.error = error;
     }
-    public int getIdevacuee() {
-        return idevacuee;
+
+    public int getIddonations() {
+        return iddonations;
     }
-    public void setIdevacuee(int idevacuee) {
-        this.idevacuee = idevacuee;
+
+    public void setIddonations(int iddonations) {
+        this.iddonations = iddonations;
     }
+
+    public Donation getDonationBean() {
+        return donationBean;
+    }
+
+    public void setDonationBean(Donation donationBean) {
+        this.donationBean = donationBean;
+    }
+
 
 
    

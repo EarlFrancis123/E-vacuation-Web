@@ -8,15 +8,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import com.opensymphony.xwork2.ActionSupport;
-import project.example.model.Evacuee;
+import project.example.model.Donation;
 import project.example.model.Evacuation;
-public class UpdateEvacuee extends ActionSupport {
+public class UpdateDonation extends ActionSupport {
     public ArrayList evacuations = new ArrayList();
-    private int idevacuee;
-    private Evacuee evacueeBean;
+    private int iddonations;
+    private Donation donationBean;
     Statement statement = null;
     public String execute() {
-        evacueeBean = getEvacueeBean();
+        donationBean = getDonationBean();
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         try {
@@ -34,8 +34,8 @@ public class UpdateEvacuee extends ActionSupport {
                     evacuation.setEvacuationName(rs.getString(2));   
                     evacuations.add(evacuation.getEvacuationName());
 
-                    Evacuee evacuee = new Evacuee();
-                    evacuee.setIdevacuee(idevacuee);
+                    Donation donation = new Donation();
+                    donation.setIddonations(iddonations);
 
                 }
             } 
@@ -62,23 +62,25 @@ public class UpdateEvacuee extends ActionSupport {
     public void setEvacuations(ArrayList evacuations) {
         this.evacuations = evacuations;
     }
-    public int getIdevacuee() {
-        return idevacuee;
-    }
-    public void setIdevacuee(int idevacuee) {
-        this.idevacuee = idevacuee;
-    }
-    public Evacuee getEvacueeBean() {
-        return evacueeBean;
-    }
-    public void setEvacueeBean(Evacuee evacueeBean) {
-        this.evacueeBean = evacueeBean;
-    }
+   
+ 
     public Statement getStatement() {
         return statement;
     }
+    public Donation getDonationBean() {
+        return donationBean;
+    }
+    public void setDonationBean(Donation donationBean) {
+        this.donationBean = donationBean;
+    }
     public void setStatement(Statement statement) {
         this.statement = statement;
+    }
+    public int getIddonations() {
+        return iddonations;
+    }
+    public void setIddonations(int iddonations) {
+        this.iddonations = iddonations;
     }
    
    

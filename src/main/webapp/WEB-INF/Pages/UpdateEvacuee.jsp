@@ -19,8 +19,10 @@
               <div class="card-body p-5">
                 <h2 class="text-uppercase text-center mb-5">UPDATE EVACUEE</h2>
   
+                <div class="input-group-btn"  style="margin-left: 5%;">
+                  
                 <s:form action="UpdateE" style="margin-right: 10px; margin-left: 20px;" >
-  
+                  <s:param name="idevacuee" value="idevacuee" />
                     <div class="form-outline mb-4">
                         <label class="form-label" for="FirstName">First Name</label>
                         <s:textfield name="evacueeBean.firstName"  id="First Name"   class="form-control form-control-lg" required="true" />
@@ -55,7 +57,7 @@
               
   
                   <div class="d-flex justify-content-center">
-                      <s:submit value="Update Evacuee" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" style="margin-top: 20px;" />
+                      <s:submit value="UpdateE" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" style="margin-top: 20px;" />
                   </div>
                  
   
