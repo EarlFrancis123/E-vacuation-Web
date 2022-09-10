@@ -70,4 +70,5 @@ s:textfield{
     </section>
     
   </body>
+  <s:include value="Footer.jsp" />
 </html>

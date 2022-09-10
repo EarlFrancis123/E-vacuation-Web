@@ -87,4 +87,5 @@
 <!-- Section: Design Block -->
   
   </body>
+  <s:include value="Footer.jsp" />
 </html>

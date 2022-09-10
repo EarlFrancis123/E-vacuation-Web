@@ -13,4 +13,5 @@
 
     <p><a href="<s:url action='index' />" >Return to home page</a>.</p>
   </body>
+  <s:include value="Footer.jsp" />
 </html>
