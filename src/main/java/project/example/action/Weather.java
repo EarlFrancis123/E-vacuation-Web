@@ -9,11 +9,13 @@ import project.example.model.WeatherResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 public class Weather {
     WeatherResponse weatherResponse;
- 
+    private String searchKeyword;
+
     public String execute() throws Exception {
+       
         
         try {
-            URL url = new URL("http://api.weatherstack.com/current?access_key=9de53c99ecaac9db053740651603d9cc&query=Cebu");
+            URL url = new URL("http://api.weatherstack.com/current?access_key=9de53c99ecaac9db053740651603d9cc&query="+searchKeyword);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
 
@@ -41,6 +43,14 @@ public class Weather {
     public void setWeatherResponse(WeatherResponse weatherResponse) {
         this.weatherResponse = weatherResponse;
     }
+    public String getSearchKeyword() {
+        return searchKeyword;
+    }
+    public void setSearchKeyword(String searchKeyword) {
+        this.searchKeyword = searchKeyword;
+    }
+
+
    
 
 
