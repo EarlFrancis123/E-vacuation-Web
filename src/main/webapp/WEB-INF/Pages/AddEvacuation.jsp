@@ -46,15 +46,10 @@
                     <label class="form-label" for="TotalCapacity">TotalCapacity</label>
                     <s:textfield name="evacuationBean.evacuationCapacity"  id="Total Capacity"   class="form-control form-control-lg" required="true" style="margin-top: 30px" />
                   </div>
-                 
-  
-              
-  
+
                   <div class="d-flex justify-content-center">
                       <s:submit value="Add Evacuations" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" style="margin-top: 20px;" />
                   </div>
-  
-              
   
                 </s:form>
   
@@ -66,6 +61,6 @@
     </div>
   </section>
 
-
+  <s:include value="Footer.jsp" />
   </body>
 </html>

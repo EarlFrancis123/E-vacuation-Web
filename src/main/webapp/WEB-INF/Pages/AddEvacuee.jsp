@@ -70,7 +70,7 @@
       </div>
     </div>
   </section>
-
+  <s:include value="Footer.jsp" />
 
   </body>
 </html>

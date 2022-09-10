@@ -89,4 +89,5 @@ prefix="sx" uri="/struts-dojo-tags" %>
  <br>
 
   </body>
+  <s:include value="Footer.jsp" />
 </html>

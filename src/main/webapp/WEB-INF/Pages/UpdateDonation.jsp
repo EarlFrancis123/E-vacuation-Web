@@ -85,4 +85,5 @@
 
 
   </body>
+  <s:include value="Footer.jsp" />
 </html>

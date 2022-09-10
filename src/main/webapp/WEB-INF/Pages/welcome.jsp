@@ -10,4 +10,5 @@
     <h2>Welcome!</h2>
     <p>Hello...<s:property value="nameInput" /></p>
   </body>
+  <s:include value="Footer.jsp" />
 </html>
