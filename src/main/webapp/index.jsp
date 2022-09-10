@@ -44,16 +44,16 @@
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
                     <h2 class="h4 fw-bolder">Evacuation</h2>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <p><b>Plan to Evacuate </b>Many kinds of emergencies can cause you to have to evacuate. In some cases, you may have a day or two to prepare while other situations might call for an immediate evacuation. Planning is vital to making sure that you can evacuate quickly and safely no matter what the circumstances.</p>
                     <s:a class="text-decoration-none" href="%{ListEvacuation2}">
                       Evacuation List
                         <i class="bi bi-arrow-right"></i>
-                    </s:a>
+                    </s:a> 
                 </div>
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
                     <h2 class="h4 fw-bolder">Evacuee</h2>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <p>After an emergency, you may need to survive on your own for several days. Being prepared means having your own food, water and other supplies to last for several days. A disaster supplies kit is a collection of basic items your household may need in the event of an emergency..</p>
                     <s:a class="text-decoration-none" href="%{ListEvacuee2}">
                       Evacuee List
                         <i class="bi bi-arrow-right"></i>
@@ -62,7 +62,7 @@
                 <div class="col-lg-4">
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
                     <h2 class="h4 fw-bolder">Weather Forcast</h2>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <p>Lightning is a leading cause of injury and death from weather-related hazards. Although most lightning victims survive, people struck by lightning often report a variety of long-term, debilitating symptoms..</p>
                     <s:a class="text-decoration-none" href="%{Weather2}">
                         Weather Forcast
                         <i class="bi bi-arrow-right"></i>
