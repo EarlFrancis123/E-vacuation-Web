@@ -41,13 +41,17 @@
 }
     </style>
   </head>
-  <body>
+  <body style="background-color: rgb(184, 179, 179);">
     <s:include value="Menu.jsp" /> 
     <main>
-        <h1 style="margin-left: 40%; margin-top: 10%;">Cebu's Weather Forcast</h1>
-        <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+        <h1 style="margin-left: 41%; margin-top: 5%;">Weather Forcast</h1>
+        <form style="margin-top: 40px;">
+            <s:textfield cssClass="w-60 p-2 border border-gray-200 rounded-md mr-[5px]" type="text" name="searchKeyword" placeholder="Search for a City....." style="margin-left: 700px;"/>
+            <s:submit cssClass="block w-full text-black font-semibold px-4 py-2 bg-green-500 border border-green-600 rounded-md cursor-pointer" value="Search" />
+        </form>
+        <div class="container-fluid px-1 px-md-4 py-5 mx-auto" >
             <div class="row d-flex justify-content-center px-3">
-                <div class="card">
+                <div class="card" style="margin-top: 1px;">
                     <h2 class="ml-auto mr-4 mt-3 mb-0">    <s:property value="weatherResponse.request.query"/><br/></h2>
                     <p class="ml-auto mr-4 mb-0 med-font">Wind Speed: <s:property value="weatherResponse.current.wind_speed"/></p>
                     <h1 class="ml-auto mr-4 large-font"> <s:property value="weatherResponse.current.temperature"/>C&#176;</h1>
@@ -58,5 +62,5 @@
  
     </main>
   </body>
-  <s:include value="Footer.jsp" />
+  
 </html>
