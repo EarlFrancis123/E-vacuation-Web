@@ -9,16 +9,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.opensymphony.xwork2.ActionSupport;
-import project.example.model.Evacuation;
+import project.example.model.Evacuee;
 
-public class ListEvacuation extends ActionSupport {
-    ArrayList<Evacuation> evacuations = new ArrayList<Evacuation>();
+public class SortbyEvacuee extends ActionSupport {
+    private String evacuationInput;
+    ArrayList<Evacuee> evacuees = new ArrayList<Evacuee>();
     public ArrayList listOfFirstNames = new ArrayList();
-    public ArrayList<Evacuation> getEvacuations() {  
-        return evacuations;  
+    public ArrayList<Evacuee> getEvacuees() {  
+        return evacuees;  
     }  
-    public void setList(ArrayList<Evacuation> evacuations) {  
-        this.evacuations = evacuations;  
+    public void setList(ArrayList<Evacuee> evacuees) {  
+        this.evacuees = evacuees;  
     }  
 
     public String execute() throws Exception {
@@ -30,21 +31,20 @@ public class ListEvacuation extends ActionSupport {
             connection = DriverManager.getConnection(URL, "root", "Loveleycute30");
 
             if (connection != null) {
-                String sql = "SELECT * FROM evacuation";
+                String sql = "select * From evacuee where evacuatioName='"+getEvacuationInput()+"'" ;
                 preparedStatement = connection.prepareStatement(sql);
                 ResultSet rs= preparedStatement.executeQuery();
 
                 while(rs.next()){  
-                    Evacuation evacuation=new Evacuation();
-                    evacuation.setIdevacuation(rs.getInt(1));   
-                    evacuation.setEvacuationName(rs.getString(2));   
-                    evacuation.setEvacuationNumber(rs.getString(3)); 
-                    evacuation.setEvacuationAddress(rs.getString(4));
-                    evacuation.setEvacuationBarangay(rs.getString(5));
-                    evacuation.setEvacuationCapacity(rs.getString(6));
-                    evacuation.setEvacuationStatus(rs.getString(7));
-                    evacuations.add(evacuation);  
-                    listOfFirstNames.add(evacuation.getEvacuationBarangay());
+                    Evacuee evacuee=new Evacuee();
+                    evacuee.setFirstName(rs.getString(3));   
+                    evacuee.setLastname(rs.getString(4)); 
+                    evacuee.setContactNumber(rs.getString(5));
+                    evacuee.setGender(rs.getString(6));; 
+                    evacuee.setAddress(rs.getString(7));; 
+                    evacuee.setEvacuationName(rs.getString(8));; 
+                    evacuees.add(evacuee);  
+                    listOfFirstNames.add(evacuee.getFirstName());
                 }
             } 
          } catch (Exception e) {
@@ -59,8 +59,14 @@ public class ListEvacuation extends ActionSupport {
     public String displayUser() {   
         return SUCCESS;
     }
-    public void setEvacuations(ArrayList<Evacuation> evacuations) {
-        this.evacuations = evacuations;
+    public String getEvacuationInput() {
+        return evacuationInput;
+    }
+    public void setEvacuationInput(String evacuationInput) {
+        this.evacuationInput = evacuationInput;
+    }
+    public void setEvacuees(ArrayList<Evacuee> evacuees) {
+        this.evacuees = evacuees;
     }
     public ArrayList getListOfFirstNames() {
         return listOfFirstNames;
@@ -68,6 +74,7 @@ public class ListEvacuation extends ActionSupport {
     public void setListOfFirstNames(ArrayList listOfFirstNames) {
         this.listOfFirstNames = listOfFirstNames;
     }
-
+    
+    
     
 }

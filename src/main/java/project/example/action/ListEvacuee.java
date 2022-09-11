@@ -10,10 +10,11 @@ import java.sql.SQLException;
 
 import com.opensymphony.xwork2.ActionSupport;
 import project.example.model.Evacuee;
-
+import project.example.model.Evacuation;
 public class ListEvacuee extends ActionSupport {
     ArrayList<Evacuee> evacuees = new ArrayList<Evacuee>();
     public ArrayList listOfFirstNames = new ArrayList();
+    public ArrayList evacuations = new ArrayList();
     public ArrayList<Evacuee> getEvacuees() {  
         return evacuees;  
     }  
@@ -28,6 +29,18 @@ public class ListEvacuee extends ActionSupport {
             String URL = "jdbc:mysql://localhost:3306/mydb?useTimezone=true&serverTimezone=UTC";
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(URL, "root", "Loveleycute30");
+
+            if (connection != null) {
+                String sql1 = "SELECT * FROM evacuation";
+                preparedStatement = connection.prepareStatement(sql1);
+                ResultSet rs1= preparedStatement.executeQuery();
+
+                while(rs1.next()){  
+                    Evacuation evacuation=new Evacuation();
+                    evacuation.setEvacuationName(rs1.getString(2));   
+                    evacuations.add(evacuation.getEvacuationName());
+                }
+            } 
 
             if (connection != null) {
                 String sql = "SELECT * FROM evacuee";
@@ -59,5 +72,21 @@ public class ListEvacuee extends ActionSupport {
     public String displayUser() {   
         return SUCCESS;
     }
+    public void setEvacuees(ArrayList<Evacuee> evacuees) {
+        this.evacuees = evacuees;
+    }
+    public ArrayList getListOfFirstNames() {
+        return listOfFirstNames;
+    }
+    public void setListOfFirstNames(ArrayList listOfFirstNames) {
+        this.listOfFirstNames = listOfFirstNames;
+    }
+    public ArrayList getEvacuations() {
+        return evacuations;
+    }
+    public void setEvacuations(ArrayList evacuations) {
+        this.evacuations = evacuations;
+    }
+
     
 }

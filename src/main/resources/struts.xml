@@ -49,6 +49,22 @@
          <action name="SearchEvacuee" class="project.example.action.SearchEvacuee">
             <result>/WEB-INF/Pages/ListEvacuee.jsp</result>
          </action>
+         <action name="SortbyEvacuee" class="project.example.action.SortbyEvacuee">
+            <result>/WEB-INF/Pages/ListEvacuee.jsp</result>
+         </action>
+         <action name="SortbyEvacuee2" class="project.example.action.SortbyEvacuee">
+            <result>/WEB-INF/Pages/ListEvacuee2.jsp</result>
+         </action>
+         <action name="SortbyDonation" class="project.example.action.SortbyDonation">
+            <result>/WEB-INF/Pages/ListDonation.jsp</result>
+         </action>
+         <action name="SortbyEvacuation" class="project.example.action.SortbyEvacuation">
+            <result>/WEB-INF/Pages/ListEvacuation.jsp</result>
+         </action>
+          <action name="SortbyEvacuation2" class="project.example.action.SortbyEvacuation">
+            <result>/WEB-INF/Pages/ListEvacuation2.jsp</result>
+         </action>
+         
            <action name="SearchDonations" class="project.example.action.SearchDonation">
             <result>/WEB-INF/Pages/ListDonation.jsp</result>
          </action>

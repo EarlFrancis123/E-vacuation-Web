@@ -28,7 +28,14 @@ prefix="sx" uri="/struts-dojo-tags" %>
       <br>
      
     </div>
-   
+    <s:form action="SortbyEvacuee2" style="margin-left: 56%;">
+      <sx:autocompleter
+        label="Sort By Evacuation"
+        list="evacuations"
+        name="evacuationInput"
+      />
+      <s:submit value="Sort" />
+    </s:form>
     <body>
    <!--   <s:form action="displayEvacuee">
         <sx:autocompleter
