@@ -63,7 +63,7 @@
                 <div class="col-lg-4">
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
                     <h2 class="h4 fw-bolder">Donation</h2>
-                    <p>Lightning is a leading cause of injury and death from weather-related hazards. Although most lightning victims survive, people struck by lightning often report a variety of long-term, debilitating symptoms..</p>
+                    <p></p>
                     <s:a class="text-decoration-none" href="%{Weather}">
                         Weather Forcast
                         <i class="bi bi-arrow-right"></i>
